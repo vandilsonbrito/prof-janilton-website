@@ -66,13 +66,13 @@ export default function ContactSection() {
     };
 
     return (
-      <section className="w-full h-full bg-slate-100 px-4 md:px-8 pt-10 pb-16 flex flex-col items-center font-Montserrat" id="/contato">
+      <section className="w-full h-full bg-white px-4 md:px-8 pt-12 pb-16 flex flex-col items-center border-t-2" id="/contato">
           <h3 className=" font-bold text-lg md:text-3xl mb-8 text-black" data-aos="fade-up">Entre em contato comigo</h3>
 
           <form action="https://api.staticforms.xyz/submit" 
           method="POST" 
           onSubmit={handleSubmit}
-          className="w-[95%] md:w-[60%] max-w-[50rem] h-full flex flex-col items-center gap-8 border-4 p-8 rounded-md bg-[#dbdbdbdc]"
+          className="w-[100%] md:w-[60%] max-w-[50rem] h-full flex flex-col items-center gap-8 border-4 px-5 py-8 sm:p-8 rounded-lg bg-[#dbdbdbdc]"
           data-aos="fade-up"
           >
               <div className="w-full">
