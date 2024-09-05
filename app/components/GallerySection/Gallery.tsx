@@ -29,11 +29,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import useMedia from 'use-media';
-import './gallery.css';
 
-const IMAGES = [imgGallery0, imgGallery1, imgGallery2, imgGallery3, imgGallery4, imgGallery5, imgGallery6, imgGallery7, imgGallery8, imgGallery9, imgGallery10, imgGallery11, imgGallery12, imgGallery13, imgGallery14, imgGallery15, imgGallery16, imgGallery17, imgGallery18, imgGallery19, imgGallery20,imgGallery21, imgGallery22, imgGallery23, imgGallery24, imgGallery25, imgGallery26];
-const IMAGES_MOBILE = [imgGallery0, imgGallery1, imgGallery2, imgGallery3, imgGallery5, imgGallery6, imgGallery7, imgGallery8]
-
+const IMAGES = [imgGallery0, imgGallery1, imgGallery2, imgGallery3, imgGallery4, imgGallery5, imgGallery6, imgGallery7, imgGallery8, imgGallery9, imgGallery10, imgGallery11, imgGallery12, imgGallery13, imgGallery14, imgGallery15, imgGallery16, imgGallery17, imgGallery18, imgGallery19, imgGallery20,imgGallery21 ];
 
 export default function Gallery() {
 
