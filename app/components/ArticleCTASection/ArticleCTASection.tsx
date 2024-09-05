@@ -24,7 +24,7 @@ export default function ArticleMenuSection() {
             <GrArticle className='text-5xl'/>
             <FaPencilAlt className='text-4xl'/>
         </div>
-        <Link href='/articles' >
+        <Link href='/artigos' >
           <button className="w-fit flex items-center h-[50px] bg-blue-600 hover:bg-blue-700 text-white tracking-wider p-6 px-10 rounded-3xl font-semibold uppercase text-[1.05rem] duration-200 ease-in-out active:scale-[0.98]">Ver artigos</button>
         </Link>
     </section>
