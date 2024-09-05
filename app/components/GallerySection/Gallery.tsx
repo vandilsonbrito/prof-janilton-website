@@ -21,15 +21,9 @@ import imgGallery18 from '../../../public/imgs-gallery/foto18.webp';
 import imgGallery19 from '../../../public/imgs-gallery/foto19.webp';
 import imgGallery20 from '../../../public/imgs-gallery/foto20.webp';
 import imgGallery21 from '../../../public/imgs-gallery/foto21.webp';
-import imgGallery22 from '../../../public/imgs-gallery/foto22.webp';
-import imgGallery23 from '../../../public/imgs-gallery/foto23.webp';
-import imgGallery24 from '../../../public/imgs-gallery/foto24.webp';
-import imgGallery25 from '../../../public/imgs-gallery/foto25.webp';
-import imgGallery26 from '../../../public/imgs-gallery/foto26.webp';
 
-import PropTypes from 'prop-types';
 import AOS from 'aos';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -91,67 +85,35 @@ export default function Gallery() {
         return <Image className={className} src={src} alt={alt} loading="lazy" />;
     }
 
-  return (
-    <section className="w-full max-w-[90rem] h-full bg-white pt-16 pb-20 lg:pt-20 lg:pb-28 px-8 lg:px-16 xl:px-20 overflow-hidden">
-        <h3 className='text-lg md:text-2xl font-semibold uppercase text-center mb-14 leading-relaxed'  data-aos="fade-left">um pouco da minha vida profissional descrita em fotografias </h3>
-        {/* Mobile Screens */} 
-        <div className="w-full h-full block lg:hidden shadow-2xl p-6 rounded-md">
-            <Slider
-                {...settings}
-                className="w-[100%] h-full flex flex-row justify-center items-center lg:hidden  border-[3px] border-white rounded-lg opacity-90 "
-                data-aos="fade-left"
-                >
-                    {
-                        IMAGES_MOBILE.length > 0 ? (
-                        IMAGES_MOBILE?.map((image, index) => (
-                            <LazyLoadedImage 
-                                key={index} 
-                                className='w-[100%] aspect-square bg-cover' 
-                                src={image} 
-                                alt="Professor Janilton trabalhando" />
-                        ))
-                        )
-                        :
-                        (
-                            <p>Erro ao carregar imagens.</p>
-                        )
-                    }
-            </Slider>
-        </div>
-       
-        {/* Big Screens */}
-        <div className="w-[100%] h-full hidden lg:block shadow-2xl p-7 bg-main-blue rounded-md">
-            <Slider
-                {...settings}
-                className="w-[100%] h-full hidden lg:flex lg:flex-row lg:justify-center lg:items-center  border-[3px] border-white rounded-lg opacity-90 "
-                data-aos="fade-left"
-                >
-                    {
-                        IMAGES.length > 0 ? (
-                        IMAGES?.map((image, index) => (
-                            <LazyLoadedImage
-                                key={index}
-                                className='w-[100%] aspect-square bg-cover'
-                                src={image}
-                                alt="Professor Janilton trabalhando"
-                                />
-                        ))
-                        )
-                        :
-                        (
-                            <p>Erro ao carregar imagens.</p>
-                        )
-                    }
-            </Slider>
-        </div>
-        <p className='mt-5 text-center'>Deslize para ver mais</p>
-    </section>
-  )
-}
+    return (
+      <section className="w-full max-w-[90rem] h-full hidden md:block bg-white pt-16 pb-20 lg:py-20 px-8 lg:px-16 xl:px-20 overflow-hidden">
+          <h3 className='text-lg md:text-2xl font-semibold uppercase text-center mb-14 leading-relaxed'  data-aos="fade-left">um pouco da minha vida profissional descrita em fotografias </h3>
 
-
-Gallery.propTypes = {
-    src: PropTypes.string,
-    alt: PropTypes.string,
-    className: PropTypes.string,
+          <div className="w-[100%] h-full hidden md:block shadow-2xl p-7 bg-main-blue rounded-md">
+              <Slider
+                  {...settings}
+                  className="w-[100%] h-full lg:flex lg:flex-row lg:justify-center lg:items-center  border-[3px] border-white rounded-lg opacity-90 "
+                  data-aos="fade-left"
+                  >
+                      {
+                          IMAGES.length > 0 ? (
+                          IMAGES?.map((image, index) => (
+                              <LazyLoadedImage
+                                  key={index}
+                                  className='w-[371px] h-[371px] aspect-square bg-cover'
+                                  src={image}
+                                  alt="Professor Janilton trabalhando"
+                                  />
+                          ))
+                          )
+                          :
+                          (
+                              <p>Erro ao carregar imagens.</p>
+                          )
+                      }
+              </Slider>
+          </div>
+          <p className='mt-5 text-center'>Deslize para ver mais</p>
+      </section>
+    )
 }
