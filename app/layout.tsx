@@ -7,9 +7,16 @@ import Head from "next/head";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Prof. Janilton Almeida",
-  description: "Professor Doutor Janilton Almeida de Lima",
+export const metadata = {
+  charset: 'UTF-8',
+  robots: 'index, follow',
+  googleSiteVerification: '451ac4M4RlnKucto2im0QhUM0ZI-nmb1gFi8cSPyIxw',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
 };
 
 export default function RootLayout({
@@ -19,15 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-        <Head>
-          <meta charSet="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="robots" content="index, follow"/>
-          <meta name="google-site-verification" content="451ac4M4RlnKucto2im0QhUM0ZI-nmb1gFi8cSPyIxw" />  
-        </Head>
         <body className={montserrat.className}>
           <GlobalProvider>
-            {children}
+              {children}
           </GlobalProvider>
         </body>
     </html>
