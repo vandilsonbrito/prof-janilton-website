@@ -1,11 +1,9 @@
 import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Convencimento from "./components/WinningSection/WinningSection";
+import Convencimento from "./components/ConvinceSection/ConvinceSection";
 import Sobre from './components/AboutSection/AboutSection';
 import Canal from './components/ChannelSection/ChannelSection';
 import Contato from './components/ContactSection/ContactSection';
 import Footer from "./components/Footer/Footer";
-import Gallery from "./components/GallerySection/Gallery";
 import ArticleCTASection from "./components/ArticleCTASection/ArticleCTASection";
 import dynamic from 'next/dynamic';
 import Head from "next/head";
@@ -56,6 +54,28 @@ export default function Home() {
 
     return (
       <main className="w-full h-full ">
+          <Head>
+              <link rel="amphtml" href="https://profjanilton.com.br?page=amp" />
+              {/* Estrutura de dados Schema.org */}
+              <script type="application/ld+json">
+                  {JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Website",
+                  "headline": 'Home page - Website Professor Doutro Janilton de Lima Almeida',
+                  "description": 'O Professor Janilton é um especialista na arte de dar aulas criativas, pesquisa educacional e inovação. Posssui Mestrado e Doutorado e trabalha como professor de Geografia há mais 25 anos',
+                  "image": 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+                  "author": {
+                      "@type": "Person",
+                      "name": "Professor Dr. Janilton de Lima Almeida"
+                  },
+                  "datePublished": "2023-12-04",
+                  "publisher": {
+                      "@type": "Organization",
+                      "name": "profjanilton.com.br"
+                  }
+                  })}
+              </script>
+          </Head>
 
           <Header/>
           <div className="overflow-hidden flex flex-col justify-center items-center">
@@ -71,3 +91,5 @@ export default function Home() {
       </main>
     )
 }
+
+
