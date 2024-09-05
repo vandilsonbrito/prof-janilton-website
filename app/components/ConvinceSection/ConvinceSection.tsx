@@ -17,7 +17,7 @@ export default function ConvinceSection() {
       }, []) 
 
   return (
-    <section className='w-full h-full bg-main-blue py-10 px-14 pb-20 lg:pb-24 flex flex-col items-center font-Montserrat'>
+    <section className='w-full h-full bg-main-blue py-10 px-5 lg:px-14 pb-20 lg:pb-24 flex flex-col items-center font-Montserrat'>
         <div className="w-full flex justify-center mt-10" data-aos="fade-up">
             <h2 className="text-white text-3xl lg:text-4xl uppercase font-semibold text-center">Por que me acompanhar?</h2>
         </div>
