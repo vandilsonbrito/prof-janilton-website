@@ -14,6 +14,7 @@ O Professor Janilton é doutor em Ciências e professor de Geografia. O website 
 
 <h2>Acquired Experience</h2>
 
+Aprendi a integrar o Sanity CMS com Next.js e com isso o professor publica facilmente seus artigos de opinião no site.
 
 Na seção de contato é possível o usuário mandar um e-mail diretamente para o professor facilitado pelo Static Forms, o professor receberá a mensagem e ao clicar em 'responder' no seu provedor de e-mail será direcionado para o envio da resposta com o endereço de e-mail do usuário já preenchido otimizando o processo de resposta. 
 
