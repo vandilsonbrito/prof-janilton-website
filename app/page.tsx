@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       description: 'O Professor Janilton é um especialista na arte de dar aulas criativas, pesquisa educacional e inovação.',
       images: [
         {
-          url: 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+          url: 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
           alt: 'Professor Dr. Janilton de Lima Almeida',
           width: 400,
           height: 250
@@ -63,7 +63,7 @@ export default function Home() {
                   "@type": "Website",
                   "headline": 'Home page - Website Professor Doutro Janilton de Lima Almeida',
                   "description": 'O Professor Janilton é um especialista na arte de dar aulas criativas, pesquisa educacional e inovação. Posssui Mestrado e Doutorado e trabalha como professor de Geografia há mais 25 anos',
-                  "image": 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+                  "image": 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
                   "author": {
                       "@type": "Person",
                       "name": "Professor Dr. Janilton de Lima Almeida"

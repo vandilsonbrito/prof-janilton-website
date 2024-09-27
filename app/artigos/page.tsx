@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       description: 'Compartilho experiências, reflexões e insights ligados a prática pedagógica, iniciação científica e ensino de geografia.',
       images: [
         {
-          url: 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+          url: 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
           alt: 'Artigo de opinião',
           width: 400,
           height: 250
