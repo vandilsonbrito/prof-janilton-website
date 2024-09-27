@@ -15,7 +15,7 @@ export const metadata: Metadata = {
       description: 'Olá, eu sou o professor Janilton Almeida. Com uma sólida formação acadêmica e mais de duas décadas de experiência no ensino, estou comprometido com a promoção da educação e o desenvolvimento integral dos estudantes.',
       images: [
         {
-          url: 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+          url: 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
           alt: 'Professor Dr. Janilton de Lima Almeida',
           width: 400,
           height: 250

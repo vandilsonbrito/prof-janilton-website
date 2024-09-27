@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
             description: data.smallDescription,
             images: [
                 {
-                    url: 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+                    url: 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
                     alt: 'Artigo de opinião',
                     width: 400,
                     height: 250
@@ -66,7 +66,7 @@ export default async function BlogArticle({params}: {params: { slug: string}}) {
                     "@type": "Article",
                     "headline": data.title,
                     "description": data.smallDescription,
-                    "image": 'https://asset.cloudinary.com/ds7cszkkx/434e2c7590e8a9d4038bed857aed81bc',
+                    "image": 'https://res.cloudinary.com/ds7cszkkx/image/upload/v1725730478/janilton-website_yu76ku.webp',
                     "author": {
                         "@type": "Person",
                         "name": "Professor Dr. Janilton de Lima Almeida"
