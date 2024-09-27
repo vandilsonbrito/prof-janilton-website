@@ -6,6 +6,7 @@ O Professor Janilton é doutor em Ciências e professor de Geografia. O website 
 
 - React.js
 - Next.js
+- TypeScript
 - Tailwind CSS
 - Sanity CMS
 - Static Forms
