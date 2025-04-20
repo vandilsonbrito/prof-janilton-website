@@ -19,7 +19,7 @@ export default function Banner() {
                         <p><strong>Janilton Almeida</strong></p>  
                     </h1>
                 </div>
-                <p className='lg:text-[1.2rem]'>Domine a arte de dar aulas com um especialista em aprendizagem criativa, inovação e iniciação cinetífica na escola.</p>
+                <p className='lg:text-[1.2rem]'>Domine a arte de dar aulas com um especialista em aprendizagem criativa, inovação e iniciação científica na escola.</p>
             </div>
                 
             <div className="w-2/5 h-full flex justify-center items-center">
